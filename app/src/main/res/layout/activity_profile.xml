@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="405dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/gradientbackground"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/frank" />
+
+            <TextView
+                android:id="@+id/textprofile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-5dp"
+                android:text="PAPA FRANKU"
+                android:textColor="#FFF"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="285dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="Suspicious0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No. of clothes"
+                        android:textColor="#000"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/noofcloth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="125"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="Suspicious0dp">
+
+                    <TextView
+                        android:id="@+id/textupadte"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Update Profile"
+                        android:textColor="#000"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/update_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_update_black_24dp"></ImageView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:id="@+id/imgmap"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/address" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="7dp"
+                android:text="Gyaneshwor, Kathmnadu, NEPAL"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/call" />
+
+            <TextView
+                android:id="@+id/textphn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="7dp"
+                android:text="9841 baki sabai affai phan bro yar"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/hobbies" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="7dp"
+                android:text="Series, Sleepig, Eating, Playing"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
