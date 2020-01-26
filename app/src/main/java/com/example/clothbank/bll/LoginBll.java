@@ -15,6 +15,7 @@ import retrofit2.Response;
 public class LoginBll {
     private UserApi userApi = Url.getInstance().create(UserApi.class);
 
+
     public LoginResponse userlogin(User user) {
         LoginResponse loginResponse = null;
         Call<LoginResponse> userCall = userApi.userlogin(user);
@@ -32,7 +33,9 @@ public class LoginBll {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         return loginResponse;
     }
+
 
 }
