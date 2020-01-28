@@ -2,6 +2,7 @@ package com.example.clothbank.api;
 
 import com.example.clothbank.model.Donation;
 import com.example.clothbank.model.User;
+import com.example.clothbank.response.ClothResponse;
 import com.example.clothbank.response.LoginResponse;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public interface UserApi {
     Call<LoginResponse> userlogin(@Body User user);
 
     @GET("user")
-    Call<List<User>>  showUser();
+    Call<List<User>> showUser();
 
     @POST("register")
     Call<Void> addUser(@Body User user);
@@ -26,6 +27,11 @@ public interface UserApi {
     @PUT("update/{id}")
     Call<String> updateUser(@Path("id") String id, @Body User user);
 
+    @GET("userdetail/{id}")
+    Call<User> updateUser(@Path("id") String id);
+
+    @GET("viewdonation/{donor}")
+    Call<ClothResponse> getNoofCloth(@Path("donor")String donor);
 
 
 }
