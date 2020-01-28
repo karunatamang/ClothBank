@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.clothbank.R;
 import com.example.clothbank.model.Donation;
+import com.example.clothbank.model.Donations;
 import com.example.clothbank.url.Url;
 import com.squareup.picasso.Picasso;
 
@@ -20,10 +21,10 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.MyHolder> {
-    List<Donation> donationList;
+    List<Donations> donationList;
     private Context context;
 
-    public DonationAdapter(Context context, List<Donation> donationList) {
+    public DonationAdapter(Context context, List<Donations> donationList) {
         this.context = context;
         this.donationList = donationList;
     }
@@ -33,13 +34,13 @@ public class DonationAdapter extends RecyclerView.Adapter<DonationAdapter.MyHold
     public DonationAdapter.MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.show_donate, parent, false);
         DonationAdapter.MyHolder myHolder = new MyHolder(view);
-        return myHolder; 
+        return myHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull DonationAdapter.MyHolder holder, int position) {
-        final Donation donation = donationList.get(position);
-        holder.textView.setText(donation.getDonor());
+        final Donations donation = donationList.get(position);
+        holder.textView.setText(donation.getDonor().getFullname());
         Picasso.get().load(Url.IMAGE_PATH + donation.getImage()).into(holder.imageView);
 
     }
