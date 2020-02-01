@@ -31,7 +31,6 @@ public class Profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         userSession = new UserSession(this);
-
         proimage = findViewById(R.id.profile_image);
         noofcloth = findViewById(R.id.noofcloth);
         proname = findViewById(R.id.textprofile_name);
@@ -70,7 +69,6 @@ public class Profile extends AppCompatActivity {
                 Intent intent = new Intent(Profile.this, UpdateProfileActivity.class);
                 startActivity(intent);
                 finish();
-
             }
         });
     }
