@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.TaskStackBuilder;
-
 import com.example.clothbank.MainActivity;
 import com.example.clothbank.R;
 
@@ -55,22 +54,7 @@ public class Notifications {
 
         notificationManager.notify(NOTIFICATION_ID, builder.build());
 
-//        NotificationManager notificationManager = (NotificationManager) context.getSystemService(context.NOTIFICATION_SERVICE);
-//
-//        Intent notificationIntent = new Intent(context, MainActivity.class);
-//        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, notificationIntent, 0);
-//
-//        android.app.Notification notification = new android.app.Notification();
-//        NotificationCompat.Builder builder;
-//        builder = new NotificationCompat.Builder(context);
-//
-//        notification = builder.setContentIntent(pendingIntent)
-//                .setSmallIcon(R.mipmap.ic_launcher)
-//                .setTicker(context.getString(R.string.app_name)).setWhen(System.currentTimeMillis())
-//                .setAutoCancel(true).setContentTitle(context.getString(R.string.app_name))
-//                .setContentText(message).build();
-//        notification.sound = Uri.parse("android.resource://" + context.getPackageName() + "/" + R.raw.notification);
-//        notificationManager.notify(1, notification);
+
     }
 
 }
