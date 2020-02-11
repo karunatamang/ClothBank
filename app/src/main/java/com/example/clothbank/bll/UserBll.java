@@ -1,8 +1,6 @@
 package com.example.clothbank.bll;
 
-import com.example.clothbank.api.DonationApi;
 import com.example.clothbank.api.UserApi;
-import com.example.clothbank.model.Donation;
 import com.example.clothbank.model.User;
 import com.example.clothbank.response.ClothResponse;
 import com.example.clothbank.url.Url;
