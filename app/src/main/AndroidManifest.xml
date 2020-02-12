@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.clothbank">
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -21,13 +21,10 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-
-        <activity android:name=".MapActivity"
-            android:label="My Map" >
-
-
-        </activity>
-        <activity android:name=".InputTypeActivity"></activity>
+        <activity
+            android:name=".MapActivity"
+            android:label="My Map"></activity>
+        <activity android:name=".InputTypeActivity" />
         <activity android:name=".UpdateProfileActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".Profile" />

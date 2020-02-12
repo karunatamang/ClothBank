@@ -2,7 +2,6 @@ package com.example.clothbank.Helper;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
 import com.example.clothbank.model.User;
 import com.google.gson.Gson;
 
@@ -18,11 +17,9 @@ public class UserSession {
         sharedPreferences = context.getSharedPreferences("User Session", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
     }
-
     public void startSession(User user, String authToken) {
 
         String userJson = new Gson().toJson(user);
-
         editor.putBoolean(IS_USER_LOGGED_IN, true);
         editor.putString(USER, userJson);
         editor.putString(AUTH_TOKEN, authToken);
