@@ -24,7 +24,7 @@
         <activity
             android:name=".MapActivity"
             android:label="My Map"></activity>
-        <activity android:name=".InputTypeActivity" />
+
         <activity android:name=".UpdateProfileActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".Profile" />
